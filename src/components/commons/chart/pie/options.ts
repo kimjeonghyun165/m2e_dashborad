@@ -1,4 +1,8 @@
-const ChartOptions = {
+import ReactApexChart from "react-apexcharts";
+import { ApexOptions } from "apexcharts";
+
+
+const ChartOptions: ApexOptions = {
     colors: ["#84849e", "#0bd6b3", "#af04f9", "#ff9715", "#ff003d"],
     chart: {
         animations: {
