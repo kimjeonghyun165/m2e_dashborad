@@ -6,7 +6,7 @@ import { fetchData } from "@/utils/utils";
 export const updateChartData = async (dataType: string): Promise<dateType> => {
   const series: SeriesItem[] = [];
   const date: string[] = [];
-  const jsonData = await fetchData("http://localhost:3001/volume/" + dataType);
+  const jsonData = await fetchData("http://58.143.19.231:8080/volume/" + dataType);
   const lastTenDaysData = jsonData.slice(0, 7);
 
   if (lastTenDaysData) {

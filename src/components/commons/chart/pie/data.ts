@@ -4,7 +4,7 @@ export const updateChartData = async (option: string) => {
     let series: number[] = [0, 0, 0, 0, 0]; // 초기값을 0으로 설정
 
     if (option === "Last day") {
-        const jsonData = await fetchData("http://localhost:3001/volume/daily-total-krw-price");
+        const jsonData = await fetchData("http://58.143.19.231:8080/volume/daily-total-krw-price");
         const data = jsonData.slice(0, 1);
         const typeTotalPrice = data[0].typeTotalPrice;
         typeTotalPrice.forEach((type: any, index: number) => {
@@ -14,7 +14,7 @@ export const updateChartData = async (option: string) => {
         });
     }
     else if (option === "Last week") {
-        const jsonData = await fetchData("http://localhost:3001/volume/daily-total-krw-price");
+        const jsonData = await fetchData("http://58.143.19.231:8080/volume/daily-total-krw-price");
         const data = jsonData.slice(0, 7);
 
         data.forEach((entry: any) => {
