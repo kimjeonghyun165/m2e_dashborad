@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import dynamic from "next/dynamic";
 import ChartOptions from "./options";
 import ChartHeader from "./style";
@@ -32,7 +32,7 @@ function Chart({ option }: Option) {
   const [chartData, setChartData] = useState<SeriesItem[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
 
-  const fetchDataAndUpdateChart = async () => {
+  const fetchDataAndUpdateChart = useCallback(async () => {
     const link =
       option === "Last week"
         ? "daily-total-krw-price"
@@ -40,11 +40,11 @@ function Chart({ option }: Option) {
     const data = await updateChartData(link);
     setChartData(data.apexData);
     setCategories(data.date);
-  };
+  }, [option]);
 
   useEffect(() => {
     fetchDataAndUpdateChart();
-  }, [option]);
+  }, [option, fetchDataAndUpdateChart]);
 
   const updatedOptions = {
     ...ChartOptions,

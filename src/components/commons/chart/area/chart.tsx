@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 import { ChartHeader, ChartFooter } from "./style";
 import { ChartOptions } from "./options";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { SeriesItem } from "@/interfaces/interfaces";
 import { updateChartData } from "./data";
 
@@ -34,18 +34,18 @@ function Chart({ option }: Option) {
   const [rate, setRate] = useState<number>(0);
   const [total, setTotal] = useState<number>(0);
 
-  const fetchDataAndUpdateChart = async () => {
+  const fetchDataAndUpdateChart = useCallback(async () => {
     const link = option === "Last week" ? "daily" : "month";
     const data = await updateChartData(link);
     setChartData(data.apexData);
     setCategories(data.date);
     setRate(data.rate);
     setTotal(data.LastTotalCount);
-  };
+  }, [option]);
 
   useEffect(() => {
     fetchDataAndUpdateChart();
-  }, [option]);
+  }, [option, fetchDataAndUpdateChart]);
 
   const updatedOptions = {
     ...ChartOptions,

@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import { ChartHeader, ChartFooter } from "./style";
 import ChartOptions from "./options";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { updateChartData } from "./data";
 
 const ApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
@@ -30,14 +30,14 @@ interface Option {
 function Chart({ option }: Option) {
   const [data, setData] = useState<any[]>([]);
 
-  const fetchDataAndUpdateChart = async () => {
+  const fetchDataAndUpdateChart = useCallback(async () => {
     const data = await updateChartData(option);
     setData(data);
-  };
+  }, [option]);
 
   useEffect(() => {
     fetchDataAndUpdateChart();
-  }, [option]);
+  }, [option, fetchDataAndUpdateChart]);
 
   return (
     <ApexChart
