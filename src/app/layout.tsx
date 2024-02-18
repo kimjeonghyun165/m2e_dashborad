@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "슈퍼워크 신발 거래량",
     description:
       "슈퍼워크 신발 거래량/민팅 정보(비공식 데이터)\nSuperwalk Shoe Transaction Volume/Minting Information (Unofficial Data)",
-    images: "https://i.ibb.co/r6DJts0/2024-02-12-11-11-05.png",
+    images: "https://i.ibb.co/tCJKSJM/2024-02-12-11-11-05.png",
   },
 };
 
