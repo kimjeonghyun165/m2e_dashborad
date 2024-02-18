@@ -1,3 +1,4 @@
+
 export const ChartOptions = {
     colors: ["#84849e", "#af04f9", "#ff9715", "#ff003d"],
     chart: {

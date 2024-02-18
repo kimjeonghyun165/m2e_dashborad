@@ -5,7 +5,7 @@ import { calculatePercentageChange, fetchData } from "@/utils/utils";
 export const updateChartData = async (dataType: string): Promise<dateType_B> => {
     const series: SeriesItem[] = [];
     const date: string[] = [];
-    const jsonData = await fetchData("http://58.143.19.231:8080/minting/" + dataType + "-minting-info");
+    const jsonData = await fetchData("https://99-planet.com/minting/" + dataType + "-minting-info");
 
 
     const lastTenDaysData = dataType === "daily" ? jsonData.slice(1, 8) : jsonData.slice(1, 7)
