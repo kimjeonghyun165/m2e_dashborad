@@ -44,7 +44,7 @@ export const updateChartData = async (option: string) => {
         });
     }
     else if (option === "Last 6 months") {
-        const jsonData = await fetchData("http://localhost:3001/volume/month-total-krw-price");
+        const jsonData = await fetchData("https://99-planet.com/volume/month-total-krw-price");
 
         const data = jsonData.slice(0, 6);
 
