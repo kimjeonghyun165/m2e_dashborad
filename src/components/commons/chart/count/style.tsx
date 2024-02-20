@@ -9,9 +9,9 @@ const ChartHeader = ({ fetchOption }: Props) => {
     <div className="flex justify-between mb-5">
       <div className="flex items-center">
         <h4 className="text-center text-sm md:text-xl font-medium text-gray-900 dark:text-white pt-4 pb-4">
-          Trade Volume&nbsp;&nbsp;
+          Volume&nbsp;&nbsp;
         </h4>
-        <p className="text-xs md:text-sm text-gray-500">(거래대금/원)</p>
+        <p className="text-xs md:text-sm text-gray-500">(거래량/회)</p>
       </div>
       <Dropdown
         onSelectOption={handleOptionSelect}

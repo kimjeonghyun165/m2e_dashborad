@@ -2,6 +2,7 @@
 export const ChartOptions = {
     colors: ["#84849e", "#af04f9", "#ff9715", "#ff003d"],
     chart: {
+
         fontFamily: "Inter, sans-serif",
         toolbar: {
             show: false,
@@ -11,7 +12,6 @@ export const ChartOptions = {
         bar: {
             horizontal: false,
             columnWidth: "70%",
-            // borderRadiusApplication: "end",
             borderRadius: 8,
         },
     },

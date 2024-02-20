@@ -1,5 +1,5 @@
 import { MintAreaChart } from "@/components/commons/chart/area/chart";
-import { BarChart } from "@/components/commons/chart/column/bar";
+import CountChart from "@/components/commons/chart/count/chart";
 import CountPiChart from "@/components/commons/chart/pie/chart";
 import VolumeChart from "@/components/commons/chart/volume/chart";
 import { Table } from "@/components/commons/table/table";
@@ -13,6 +13,9 @@ export default function Home() {
         <div className="p-2 md:px-12">
           <div>
             <VolumeChart />
+          </div>
+          <div className="mt-4">
+            <CountChart />
           </div>
           <div className="flex flex-col mt-4 gap-6 md:flex-row">
             <div className="w-full">

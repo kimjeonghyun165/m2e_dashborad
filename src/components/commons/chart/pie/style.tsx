@@ -7,13 +7,11 @@ interface Props {
 const ChartHeader = () => {
   return (
     <div className="flex justify-between mb-5">
-      <div>
-        <h5 className="leading-none text-xl md:text-2xl font-medium text-gray-900 dark:text-white pb-2">
-          Count
-        </h5>
-        <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
-          Trade Frequency by Quality
-        </p>
+      <div className="flex items-center">
+        <h4 className="text-center text-sm md:text-xl font-medium text-gray-900 dark:text-white pt-4 pb-4">
+          Count&nbsp;&nbsp;
+        </h4>
+        <p className="text-xs md:text-sm text-gray-500">(누적거래량/회)</p>
       </div>
     </div>
   );

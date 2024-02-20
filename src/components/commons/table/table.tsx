@@ -10,7 +10,10 @@ export function Table() {
           </h4>
           <p className="mt-1 text-xs">This is a list of latest transactions</p>
         </div>
-        <div className="btn btn-sm">Search</div>
+
+        <a className="btn btn-sm" href="search">
+          Search
+        </a>
       </div>
 
       <div className="relative  mt-4 overflow-x-auto sm:rounded-lg bg-white border border-gray-200">

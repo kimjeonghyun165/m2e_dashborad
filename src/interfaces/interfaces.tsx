@@ -3,6 +3,15 @@ export interface SeriesItem {
   data: number[];
 }
 
+export interface SeriesTypeItem {
+  name: string;
+  type: string;
+  data: number[];
+  dataLabel: {
+    enabled: boolean;
+  };
+}
+
 export interface dateType {
   date: string[];
   apexData: SeriesItem[];
