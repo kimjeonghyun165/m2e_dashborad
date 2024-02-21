@@ -20,7 +20,7 @@ export const updateChartData = async (dataType: string): Promise<dateType> => {
     qualityTypes.forEach(type => {
       const typeData: number[] = lastTenDaysData.map((data: any) => {
         const found = data.typeTotalPrice.find((item: any) => item.quality === type);
-        return found ? found.count : 0;
+        return found ? found.count : null;
       });
       series.push({ name: type, type: "bar", data: typeData.reverse(), dataLabel: { enabled: true } });
     });
