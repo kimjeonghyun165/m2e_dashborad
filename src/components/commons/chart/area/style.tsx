@@ -23,7 +23,7 @@ export const ChartHeader = ({ totalCount, changeRate }: Data) => {
             +{changeRate}%
           </div>
         ) : changeRate < 0 ? (
-          <div className="text-red-500 dark:text-red-500 "> -{changeRate}%</div>
+          <div className="text-red-500 dark:text-red-500 "> {changeRate}%</div>
         ) : (
           <div className="text-gray-500 dark:text-gray-500 "> 0%</div>
         )}

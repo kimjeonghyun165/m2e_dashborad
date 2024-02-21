@@ -9,14 +9,11 @@ export const updateChartData = async (dataType: string): Promise<dateType> => {
   const jsonData = await fetchData("https://99-planet.com/volume/" + dataType);
   const lastTenDaysData = jsonData.slice(0, 7);
 
-  const qualityTypes: Set<string> = new Set();
-
   if (lastTenDaysData) {
-    lastTenDaysData.forEach(({ date: day, typeTotalPrice }: any) => {
+    const qualityTypes = new Set(["Normal", "Rare", "Epic", "Unique", "Legendary"]); // qualityTypes 초기화
+
+    lastTenDaysData.forEach(({ date: day }: any) => {
       date.unshift(day.slice(5));
-      typeTotalPrice.forEach((type: any) => {
-        qualityTypes.add(type.quality);
-      });
     });
 
     qualityTypes.forEach(type => {
