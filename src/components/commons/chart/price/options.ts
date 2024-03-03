@@ -5,7 +5,8 @@ export const ChartOptions: ApexOptions = {
     colors: ["#84849e", "#0bd6b3", "#af04f9", "#ff9715", "#ff003d"],
     chart: {
         zoom: {
-            autoScaleYaxis: true
+            autoScaleYaxis: true,
+            type: "xy"
         },
         fontFamily: "Inter, sans-serif",
         toolbar: {
