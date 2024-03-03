@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+input.join-item.btn.btn-square{
+    background-image: none;}
+    
+input.join-item.btn.btn-square:focus{
+    --tw-ring-color:none;}
