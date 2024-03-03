@@ -27,3 +27,18 @@ export interface dateType_B {
 export interface Props {
   fetchOption: (option: string) => void;
 }
+
+export interface FilterItem {
+  title: string;
+  items: string[];
+}
+
+export interface DividerItem {
+  text: string;
+}
+
+export interface RangeSliderProps {
+  text: string;
+  min: number;
+  max: number;
+}

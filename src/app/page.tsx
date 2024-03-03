@@ -8,8 +8,8 @@ import { Footer, Header } from "@/components/layouts";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Header />
       <div className="max-w-5xl mx-auto">
+        <Header />
         <div className="p-2 md:px-12">
           <div>
             <VolumeChart />

@@ -43,7 +43,10 @@ export const fetchData = async (url: string): Promise<any> => {
 };
 
 
-export function formatTotalKrwPrice(totalKrwPrice: number): string {
+export function formatTotalKrwPrice(totalKrwPrice: number): any {
+
+    if (totalKrwPrice === null) return null
+
     if (totalKrwPrice >= 100000000) {
         const formattedPrice = (totalKrwPrice / 100000000).toFixed(2);
         return `${formattedPrice}억`;
@@ -59,6 +62,7 @@ export function formatTotalKrwPrice(totalKrwPrice: number): string {
     } else {
         return totalKrwPrice.toString();
     }
+
 }
 
 
