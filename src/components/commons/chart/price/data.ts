@@ -5,7 +5,7 @@ export const updateChartData = async (dataType: string): Promise<dateType> => {
     const series: SeriesItem[] = [];
     const date: string[] = [];
 
-    const jsonData = (await fetchData("http://localhost:3050/volume" + dataType));
+    const jsonData = (await fetchData("https://99-planet.com/volume" + dataType));
 
     console.log(dataType)
     jsonData.forEach(({ SoldAt: day }: any) => {
