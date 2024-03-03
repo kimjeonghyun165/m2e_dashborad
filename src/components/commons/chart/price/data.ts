@@ -7,7 +7,6 @@ export const updateChartData = async (dataType: string): Promise<dateType> => {
 
     const jsonData = (await fetchData("https://99-planet.com/volume" + dataType));
 
-    console.log(dataType)
     jsonData.forEach(({ SoldAt: day }: any) => {
         date.unshift(day);
     });

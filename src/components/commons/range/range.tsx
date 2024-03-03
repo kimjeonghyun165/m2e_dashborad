@@ -14,7 +14,6 @@ export function RangeSlider({ text, min, max }: RangeSliderProps) {
 
   const handleChange = (event: Event, newValue: number | number[]) => {
     setValue(newValue as number[]);
-    console.log(newValue);
   };
 
   useEffect(() => {
