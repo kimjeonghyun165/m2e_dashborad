@@ -2,7 +2,7 @@ import { fetchData } from "@/utils/utils";
 
 export const updatePriceData = async (link: string) => {
 
-    const jsonData = (await fetchData("http://localhost:3050/volume" + link));
+    const jsonData = (await fetchData("https://99-planet.com/volume" + link));
 
     let totalKrwPrice = 0;
     let totalKlayPrice = 0;
