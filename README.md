@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SuperWalk Dashboard README
 
-## Getting Started
+## Overview
+This project is a dashboard web application for providing information about the SuperWalk, a Move to Earn web3 project. The dashboard is built using Next.js 14 for the frontend and NestJS for the backend.
 
-First, run the development server:
+The purpose of this dashboard is to display information about the SuperWalk shoe NFT transactions, including transaction volume, frequency, prices, and trend analysis. It offers filtering options for users to customize their view based on their preferences. Additionally, the dashboard provides historical transaction data to assist users in making informed decisions when purchasing SuperWalk shoe NFTs.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- Display of SuperWalk shoe NFT transaction data
+- Filtering options for transaction data
+- Visualization of transaction prices trend
+- Provision of historical transaction data for user assistance
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
+- Frontend: Next.js 14
+- Backend: NestJS
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Setup Instructions
+1. Clone the repository:
+    ```bash
+    git clone <repository-url>
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd <project-directory>
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the development server:
+    ```bash
+    npm run dev
+    ```
+5. Access the dashboard web application through the provided URL.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Usage
+1. Upon accessing the dashboard, users will be presented with transaction data regarding SuperWalk shoe NFTs.
+2. Users can utilize the filtering options to customize their view based on their preferences.
+3. The dashboard provides clear visualizations of transaction price trends, aiding users in making informed decisions.
+4. Historical transaction data is available to assist users in understanding past trends and prices.
 
-## Learn More
+## Contributors
+- [Your Name](https://github.com/your-username)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+This project is licensed under the [MIT License](LICENSE).
