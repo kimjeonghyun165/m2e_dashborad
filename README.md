@@ -1,5 +1,8 @@
 # SuperWalk Dashboard README
 
+##Link
+https://superwalk-nft-dashboard.vercel.app/
+
 ## Overview
 This project is a dashboard web application for providing information about the SuperWalk, a Move to Earn web3 project. The dashboard is built using Next.js 14 for the frontend and NestJS for the backend.
 
@@ -39,9 +42,3 @@ The purpose of this dashboard is to display information about the SuperWalk shoe
 2. Users can utilize the filtering options to customize their view based on their preferences.
 3. The dashboard provides clear visualizations of transaction price trends, aiding users in making informed decisions.
 4. Historical transaction data is available to assist users in understanding past trends and prices.
-
-## Contributors
-- [Your Name](https://github.com/your-username)
-
-## License
-This project is licensed under the [MIT License](LICENSE).
